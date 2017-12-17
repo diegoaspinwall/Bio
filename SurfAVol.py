@@ -15,12 +15,15 @@ while True:
         break
     elif shape == 's':
         thing = int(input('Enter radius: '))
+        print('Surface Area =', )
+        print('Volume =', )
+        print('Surface Area/Volume =', )
     elif shape == 'c':
-        thing = int(input('Enter radius: '))
+        thing = int(input('Enter side: '))
     elif shape == 't':
-        thing = int(input('Enter radius: '))
+        thing = int(input('Enter side: '))
     elif shape == 'i':
-        thing = int(input('Enter radius: '))
+        thing = int(input('Enter side: '))
     else:
         print('Invalid command, please repeat')
     
