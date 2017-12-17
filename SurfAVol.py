@@ -11,5 +11,17 @@ while True:
     
     shape = input('What shape do you want to look at?')
     
-    if shape == quit:
+    if shape == 'quit':
         break
+    elif shape = 's':
+        thing = int(input('Enter radius: '))
+    elif shape = 'c':
+        thing = int(input('Enter radius: '))
+    elif shape = 't':
+        thing = int(input('Enter radius: '))
+    elif shape = 'i':
+        thing = int(input('Enter radius: '))
+    else:
+        print('Invalid command, please repeat')
+    
+    print('')
