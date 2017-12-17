@@ -7,4 +7,5 @@ while True:
     print('Enter "s" for Sphere')
     print('Enter "c" for Cube')
     print('Enter "t" for Tetrahedron')
-    print('Enter "s" for Icosahedron (20 sides)')
+    print('Enter "i" for Icosahedron (20 sides)')
+    break
