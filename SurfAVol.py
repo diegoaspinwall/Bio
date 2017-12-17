@@ -8,4 +8,8 @@ while True:
     print('Enter "c" for Cube')
     print('Enter "t" for Tetrahedron')
     print('Enter "i" for Icosahedron (20 sides)')
-    break
+    
+    shape = input('What shape do you want to look at?')
+    
+    if shape == quit:
+        break
