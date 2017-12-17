@@ -13,13 +13,13 @@ while True:
     
     if shape == 'quit':
         break
-    elif shape == 's':
-        thing = int(input('Enter radius: '))
+    elif shape == 'c':
+        thing = int(input('Enter side: '))
         print('Surface Area =', 6*thing**2)
         print('Volume =', thing**3)
         print('Surface Area/Volume =', (6*thing**2)/(thing**3))
-    elif shape == 'c':
-        thing = int(input('Enter side: '))
+    elif shape == 's':
+        thing = int(input('Enter radius: '))
         print('Surface Area =', )
         print('Volume =', )
         print('Surface Area/Volume =', )
