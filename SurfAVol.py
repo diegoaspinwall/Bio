@@ -13,13 +13,13 @@ while True:
     
     if shape == 'quit':
         break
-    elif shape = 's':
+    elif shape == 's':
         thing = int(input('Enter radius: '))
-    elif shape = 'c':
+    elif shape == 'c':
         thing = int(input('Enter radius: '))
-    elif shape = 't':
+    elif shape == 't':
         thing = int(input('Enter radius: '))
-    elif shape = 'i':
+    elif shape == 'i':
         thing = int(input('Enter radius: '))
     else:
         print('Invalid command, please repeat')
