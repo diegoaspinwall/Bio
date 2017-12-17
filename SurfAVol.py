@@ -20,10 +20,19 @@ while True:
         print('Surface Area/Volume =', )
     elif shape == 'c':
         thing = int(input('Enter side: '))
+        print('Surface Area =', )
+        print('Volume =', )
+        print('Surface Area/Volume =', )
     elif shape == 't':
         thing = int(input('Enter side: '))
+        print('Surface Area =', )
+        print('Volume =', )
+        print('Surface Area/Volume =', )
     elif shape == 'i':
         thing = int(input('Enter side: '))
+        print('Surface Area =', )
+        print('Volume =', )
+        print('Surface Area/Volume =', )
     else:
         print('Invalid command, please repeat')
     
