@@ -27,7 +27,7 @@ while True:
         thing = int(input('Enter side: '))
         print('Surface Area =', ((3)**.5)*(thing**2))
         print('Volume =', ((((2)**.5)*(thing**3))/12))
-        print('Surface Area/Volume =', (((3)**.5)*(thing**2))/((((2)**.5)*(thing**3))/12))
+        print('Surface Area/Volume =', (((3)**.5)*(thing**2))/((((2)**.5)*(thing**3))/12), (6*(6**.5))/thing)
     elif shape == 'i':
         thing = int(input('Enter side: '))
         print('Surface Area =', 5*(3**.5)*(thing**2))
