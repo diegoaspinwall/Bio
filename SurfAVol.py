@@ -30,9 +30,9 @@ while True:
         print('Surface Area/Volume =', (((3)**.5)*(thing**2))/((((2)**.5)*(thing**3))/12))
     elif shape == 'i':
         thing = int(input('Enter side: '))
-        print('Surface Area =', )
-        print('Volume =', )
-        print('Surface Area/Volume =', )
+        print('Surface Area =', 5*(3**.5)*(thing**2))
+        print('Volume =', (5/12)*(5+(3**.5))*thing**3)
+        print('Surface Area/Volume =', (5*(3**.5)*(thing**2))/((5/12)*(5+(3**.5))*thing**3))
     else:
         print('Invalid command, please repeat')
     
