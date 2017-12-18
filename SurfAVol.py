@@ -22,10 +22,10 @@ while True:
         thing = int(input('Enter radius: '))
         print('Surface Area =', 4*3.1415926*(thing**2))
         print('Volume =', (4*3.1415926*(thing**3))/3)
-        print('Surface Area/Volume =', (4*3.1415926*(thing**2))/((4*3.1415926*(thing**3))/3),3/thing)
+        print('Surface Area/Volume =',3/thing)
     elif shape == 't':
         thing = int(input('Enter side: '))
-        print('Surface Area =', )
+        print('Surface Area =', ((3)**.5)*(thing**2))
         print('Volume =', )
         print('Surface Area/Volume =', )
     elif shape == 'i':
