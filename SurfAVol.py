@@ -32,7 +32,7 @@ while True:
         thing = int(input('Enter side: '))
         print('Surface Area =', 5*(3**.5)*(thing**2))
         print('Volume =', (5/12)*(5+(3**.5))*thing**3)
-        print('Surface Area/Volume =', (5*(3**.5)*(thing**2))/((5/12)*(5+(3**.5))*thing**3), (12*(3**.5))/((5+(3**.5))*thing))
+        print('Surface Area/Volume =', (12*(3**.5))/((5+(3**.5))*thing))
     else:
         print('Invalid command, please repeat')
     
