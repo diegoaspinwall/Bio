@@ -1,6 +1,7 @@
 #Diego Aspinwall
 #1-12-18
 #gradeCalculator.py
+
 curgrade = int(input('Your current grade (%): '))
 want = int(input('You want at least (%): '))
 per = int(input('Your final is worth (%): '))
