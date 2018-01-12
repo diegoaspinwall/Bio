@@ -5,6 +5,8 @@
 curgrade = int(input('Your current grade (%): '))
 want = int(input('You want at least (%): '))
 per = int(input('Your final is worth (%): '))
-print('You only need to score at least', str(blah)+'% on your final to get a', str(want)+'% overall.')
+print('You only need to score at least', str((-1/per)*(-1*want+(100-per)*curgrade))+'% on your final to get a', str(want)+'% overall.')
 
-''' Grade = Exam Worth × Exam Score + (100% − Exam Worth) × Current Grade '''
+''' want = per × Exam Score + (100% − per) × curgrade '''
+#-perxExamScore = -want+ bla
+#ExamScore = 1/-per(-want+bla)
