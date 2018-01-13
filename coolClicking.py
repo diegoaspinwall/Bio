@@ -16,11 +16,6 @@ def placePiece(event):
 
 def printBoard():
     Sprite(testhole, (CIRCX,CIRCY))
-    '''
-    for row in range(0,6):
-        for col in range(0,7):
-            Sprite(hole, (90*col+50, 90*row+50))
-    '''
 
 if __name__ == '__main__':
     
@@ -34,9 +29,7 @@ if __name__ == '__main__':
     black = Color(0x000000,1)
     blackOutline = LineStyle(1,black)
     
-    hole = CircleAsset(40,blackOutline,white)
-    redfill = CircleAsset(40,blackOutline,red)
-    bluefill = CircleAsset(40,blackOutline,blue)
+    redfill = CircleAsset(20,blackOutline,red)
     testhole = CircleAsset(CIRCR,blackOutline,white)
     
     printBoard()
