@@ -5,7 +5,6 @@
 from ggame import *
 
 def placePiece(event):
-    #Sprite(redfill, (event.x,event.y))
     print('D =',((event.x-CIRCX)**2+(event.y-CIRCY)**2)**.5)
     print(event.x,event.y)
     if ((event.x-CIRCX)**2+(event.y-CIRCY)**2)**.5 <= CIRCR:
