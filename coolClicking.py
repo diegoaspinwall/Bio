@@ -16,7 +16,7 @@ def placePiece(event):
         Sprite(LineAsset(event.x-CIRCX,event.y-CIRCY,blackOutline), (CIRCX,CIRCY))
     '''
     Sprite(LineAsset(0,40,blackOutline), (event.x,event.y-40))
-    Sprite(CircleAsset(15,blackOutline,red),(event.x,event.y-55))
+    Sprite(CircleAsset(10,blackOutline,red),(event.x,event.y-50))
 
 def printBoard():
     Sprite(testhole, (CIRCX,CIRCY))
