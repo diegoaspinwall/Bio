@@ -1,6 +1,6 @@
 #Diego Aspinwall
-#11-27-17
-#connectFour.py
+#1-13-18
+#coolClicking.py - started with connect four
 
 from ggame import *
 
