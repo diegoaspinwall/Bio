@@ -18,7 +18,6 @@ def printBoard():
     Sprite(testhole, (CIRCX,CIRCY))
 
 if __name__ == '__main__':
-    
     CIRCX = 300
     CIRCY = 200
     CIRCR = 200
