@@ -5,6 +5,7 @@
 from ggame import *
 
 def placePiece(event):
+    '''
     Sprite(redfill, (event.x,event.y))
     print('R =',((event.x-CIRCX)**2+(event.y-CIRCY)**2)**.5)
     print(event.x,event.y)
@@ -13,6 +14,8 @@ def placePiece(event):
     else:
         print('Outside')
         Sprite(LineAsset(event.x-CIRCX,event.y-CIRCY,blackOutline), (CIRCX,CIRCY))
+    '''
+    Sprite(LineAsset(0,50,blackOutline), (event.x,event.y-50)
 
 def printBoard():
     Sprite(testhole, (CIRCX,CIRCY))
