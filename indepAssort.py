@@ -5,7 +5,7 @@
 from ggame import *
 
 red = Color(0xFF0000,1)
-blue = Color(0x00FF00,1)
+blue = Color(0x0000FF,1)
 
 blueOutline = LineStyle(1,blue)
 redOutline = LineStyle(1,red)
