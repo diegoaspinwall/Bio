@@ -16,7 +16,7 @@ blueRectangle = RectangleAsset(10,20,blueOutline,blue)
 
 for i in range(0,23):
     print(i)
-    print(randint(0,1)
+    print(randint(0,1))
     Sprite(blueRectangle, (0,20*i))
     Sprite(redRectangle, (10,20*i))
 
