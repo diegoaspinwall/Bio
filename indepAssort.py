@@ -10,9 +10,9 @@ blue = Color(0x0000FF,1)
 blueOutline = LineStyle(1,blue)
 redOutline = LineStyle(1,red)
 
-redRectangle = RectangleAsset(5,10,redOutline,red)
-blueRectangle = RectangleAsset(5,10,blueOutline,blue)
+redRectangle = RectangleAsset(10,20,redOutline,red)
+blueRectangle = RectangleAsset(10,20,blueOutline,blue)
 
 Sprite(blueRectangle)
-Sprite(redRectangle, (5,0))
+Sprite(redRectangle, (10,0))
 App().run()
