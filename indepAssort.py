@@ -5,6 +5,7 @@
 from ggame import *
 from random import randint
 
+print('This program uses makes a random chromosome combination with the n you put in')
 n = int(input('What is n? '))
 print(2**n,'possible chromosome combinations')
 
