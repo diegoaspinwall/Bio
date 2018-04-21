@@ -15,7 +15,7 @@ blueRectangle = RectangleAsset(10,20,blueOutline,blue)
 
 for i in range(0,23):
     print(i)
-    Sprite(blueRectangle)
-    Sprite(redRectangle, (10,0))
+    Sprite(blueRectangle, (0,20*i))
+    Sprite(redRectangle, (10,20*i))
 
 App().run()
