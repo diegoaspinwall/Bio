@@ -3,6 +3,7 @@
 #indepAssort.py
 
 from ggame import *
+from random import randint
 
 red = Color(0xFF0000,1)
 blue = Color(0x0000FF,1)
