@@ -6,6 +6,7 @@ from ggame import *
 from random import randint
 
 n = int(input('What is n? '))
+print(2**n,'possible chromosome combinations')
 
 red = Color(0xFF0000,1)
 blue = Color(0x0000FF,1)
