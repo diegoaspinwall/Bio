@@ -13,6 +13,9 @@ redOutline = LineStyle(1,red)
 redRectangle = RectangleAsset(10,20,redOutline,red)
 blueRectangle = RectangleAsset(10,20,blueOutline,blue)
 
-Sprite(blueRectangle)
-Sprite(redRectangle, (10,0))
+for i in range(0,23):
+    print(i)
+    Sprite(blueRectangle)
+    Sprite(redRectangle, (10,0))
+
 App().run()
