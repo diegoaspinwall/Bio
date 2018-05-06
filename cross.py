@@ -43,5 +43,7 @@ for i in range(0,2):
     for j in range(0,2):
         print(m[i]+f[j])
 
+print('This is a random possibility of flower color -->')
 
 #circle = CircleAsset(50,blackOutline,color)
+App().run()
