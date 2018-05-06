@@ -18,4 +18,24 @@ black = Color(0x000000,1)
 
 blackOutline = LineStyle(1,black) 
 
+m=''
+f=''
+
+if male==1:
+    m='Rr'
+elif male==2:
+    m='RR'
+else:
+    m='rr'
+
+if female==1:
+    f='Rr'
+elif female==2:
+    f='RR'
+else:
+    f='rr'
+
+print('Male genotype =', m)
+print('Female genotype =', f)
+
 circle = CircleAsset(50,blackOutline,color)
