@@ -45,6 +45,9 @@ for i in range(0,2):
     for j in range(0,2):
         list.append(m[i]+f[j])
 
+for b in range(0,4):
+    print(list[b])
+
 print('This is a random possibility of flower color -->')
 
 circle = CircleAsset(50,blackOutline,color)
