@@ -49,6 +49,7 @@ for b in range(0,4):
     print(list[b])
 
 print('This is a random possibility of flower color -->')
-
+'''
 circle = CircleAsset(50,blackOutline,color)
 App().run()
+'''
