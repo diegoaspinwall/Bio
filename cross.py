@@ -35,6 +35,7 @@ elif female==2:
 else:
     f='rr'
 
+print('Combinations:')
 for i in range(0,2):
     for j in range(0,2):
         print(m[i]+f[j])
