@@ -35,7 +35,11 @@ elif female==2:
 else:
     f='rr'
 
+for i in range(0,2):
+    for j in range(0,2):
+        print(m[i]+f[j])
+
 print('Male genotype =', m)
 print('Female genotype =', f)
 
-circle = CircleAsset(50,blackOutline,color)
+#circle = CircleAsset(50,blackOutline,color)
