@@ -53,6 +53,7 @@ for b in range(0,4):
 print('This is a random possibility of flower color -->')
 
 choice= list[randint(0,3)]
+color=''
 
 if choice == 'rr':
     color=white
