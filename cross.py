@@ -10,6 +10,7 @@ print('')
 
 male = int(input('What is the male genotype? 1=Heterozygous, 2= Homo red, 3= Homo white '))
 female = int(input('What is the female genotype? 1=Heterozygous, 2= Homo red, 3= Homo white '))
+print('')
 
 red = Color(0xFF0000,1)
 pink = Color(0xFF80D5,1)
@@ -39,11 +40,12 @@ print('Male genotype =', m)
 print('Female genotype =', f)
 
 print('Combinations:')
+list=[]
 for i in range(0,2):
     for j in range(0,2):
-        print(m[i]+f[j])
+        list.append(m[i]+f[j])
 
 print('This is a random possibility of flower color -->')
 
-#circle = CircleAsset(50,blackOutline,color)
+circle = CircleAsset(50,blackOutline,color)
 App().run()
