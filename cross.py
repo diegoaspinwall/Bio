@@ -3,6 +3,7 @@
 #cross.py
 
 from ggame import *
+from random import randint
 
 print('This is a simulation that takes two flower parents, and calculates the probability of a color')
 print("The flower's color exhibits incomplete dominance")
@@ -16,6 +17,7 @@ red = Color(0xFF0000,1)
 pink = Color(0xFF80D5,1)
 white = Color(0xFFFFFF,1)
 black = Color(0x000000,1)
+green= Color(0x00FF00,1)
 
 blackOutline = LineStyle(1,black) 
 
@@ -49,7 +51,16 @@ for b in range(0,4):
     print(list[b])
 
 print('This is a random possibility of flower color -->')
-'''
+
+choice= list[randint(0,3)]
+
+if choice == 'rr':
+    color=white
+elif choice == 'RR':
+    color=red
+else:
+    color=pink
+
 circle = CircleAsset(50,blackOutline,color)
 App().run()
 '''
