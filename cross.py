@@ -63,4 +63,5 @@ else:
     color=pink
 
 circle = CircleAsset(50,blackOutline,color)
+Sprite(circle,(50,50))
 App().run()
