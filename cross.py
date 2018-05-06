@@ -35,12 +35,13 @@ elif female==2:
 else:
     f='rr'
 
+print('Male genotype =', m)
+print('Female genotype =', f)
+
 print('Combinations:')
 for i in range(0,2):
     for j in range(0,2):
         print(m[i]+f[j])
 
-print('Male genotype =', m)
-print('Female genotype =', f)
 
 #circle = CircleAsset(50,blackOutline,color)
