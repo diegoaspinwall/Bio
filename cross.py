@@ -64,4 +64,3 @@ else:
 
 circle = CircleAsset(50,blackOutline,color)
 App().run()
-'''
