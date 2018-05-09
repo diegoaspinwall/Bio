@@ -25,18 +25,18 @@ m=''
 f=''
 
 if male==1:
-    m='Rr'
+    m='RW'
 elif male==2:
     m='RR'
 else:
-    m='rr'
+    m='WW'
 
 if female==1:
-    f='Rr'
+    f='RW'
 elif female==2:
     f='RR'
 else:
-    f='rr'
+    f='WW'
 
 print('Male genotype =', m)
 print('Female genotype =', f)
@@ -55,7 +55,7 @@ print('This is a random possibility of flower color -->')
 choice= list[randint(0,3)]
 color=''
 
-if choice == 'rr':
+if choice == 'WW':
     color=white
 elif choice == 'RR':
     color=red
