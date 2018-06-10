@@ -17,10 +17,12 @@ def moveUp(event):
 
 #keeps track of how many frames have passed
 def step():
-    monkey.y += 1
+    data['drop']+=.5
+    monkey.y += data['drop']
     data['frames'] += 1
-    if data['frames'] == 2000:
+    if data['frames'] == 100:
         print('hi')
+        data['drop']=0
 
 #runs the game
 if __name__ == '__main__':
@@ -28,6 +30,7 @@ if __name__ == '__main__':
     data = {}
     data['score'] = 0
     data['frames'] = 0
+    data['drop'] = 0
     
     blue = Color(0x6666ff,1)
     brown = Color(0x8B4513,1)
