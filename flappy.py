@@ -10,31 +10,12 @@ ROWS = 30
 COLS = 40
 CELL_SIZE = 20
 
-#moves monkey right/l/u/d
-def moveRight(event):
-    if monkey.x < (COLS-1)*CELL_SIZE:
-        monkey.x += CELL_SIZE
-        if monkey.x == banana.x and monkey.y == banana.y:
-            moveBanana()
-            updateScore()
-def moveLeft(event):
-    if monkey.x > 0:
-        monkey.x -= CELL_SIZE
-        if monkey.x == banana.x and monkey.y == banana.y:
-            moveBanana()
-            updateScore()
+#moves monkey up
 def moveUp(event):
     if monkey.y > 0:
         monkey.y -= CELL_SIZE
         if monkey.x == banana.x and monkey.y == banana.y:
             moveBanana()
-            updateScore()
-def moveDown(event):
-    if monkey.y < (ROWS-1)*CELL_SIZE:
-        monkey.y += CELL_SIZE
-        if monkey.x == banana.x and monkey.y == banana.y:
-            moveBanana()
-            updateScore()
 
 #moves banana to random location
 def moveBanana():
