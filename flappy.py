@@ -27,8 +27,8 @@ def moveBanana():
 #moves banana if more than n have passed
 def step():
     data['frames'] += 1
-    if data['frames'] == 200:
-        moveBanana()
+    if data['frames'] == 2000:
+        print('hi)
 
 #runs the game
 if __name__ == '__main__':
