@@ -35,7 +35,7 @@ if __name__ == '__main__':
     monkeyBox = RectangleAsset(CELL_SIZE,CELL_SIZE,LineStyle(1,brown), brown)
     
     Sprite(jungleBox)
-    monkey = Sprite(monkeyBox)
+    monkey = Sprite(monkeyBox, (CELL_SIZE*(COLS/2),CELL_SIZE*(ROWS/2)))
 
     App().listenKeyEvent('keydown','up arrow',moveUp)
     App().run(step)
