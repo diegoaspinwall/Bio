@@ -28,7 +28,7 @@ if __name__ == '__main__':
     data['score'] = 0
     data['frames'] = 0
     
-    blue = Color(0x0000ff,1)
+    blue = Color(0x6666ff,1)
     brown = Color(0x8B4513,1)
     
     jungleBox = RectangleAsset(COLS*CELL_SIZE,ROWS*CELL_SIZE, LineStyle(1,blue),blue)
