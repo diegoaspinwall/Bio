@@ -19,7 +19,7 @@ def moveUp(event):
 def step():
     data['frames'] += 1
     if data['frames'] == 2000:
-        print('hi)
+        print('hi')
 
 #runs the game
 if __name__ == '__main__':
