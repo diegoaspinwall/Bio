@@ -17,12 +17,13 @@ def moveUp(event):
 
 #keeps track of how many frames have passed
 def step():
-    data['drop']+=.5
+    data['drop']+=.1
     monkey.y += data['drop']
     data['frames'] += 1
-    if data['frames'] == 100:
+    if data['frames'] == 30:
         print('hi')
         data['drop']=0
+        data['frames']=0
 
 #runs the game
 if __name__ == '__main__':
@@ -39,7 +40,7 @@ if __name__ == '__main__':
     monkeyBox = RectangleAsset(CELL_SIZE,CELL_SIZE,LineStyle(1,brown), brown)
     
     Sprite(jungleBox)
-    monkey = Sprite(monkeyBox, (CELL_SIZE*(COLS/2),CELL_SIZE*(ROWS/2)))
+    monkey = Sprite(monkeyBox, (CELL_SIZE*(COLS/2),0))
 
     App().listenKeyEvent('keydown','up arrow',moveUp)
     App().run(step)
