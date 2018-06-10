@@ -13,11 +13,12 @@ CELL_SIZE = 20
 #moves monkey up
 def moveUp(event):
     if monkey.y > 0:
-        monkey.y -= CELL_SIZE
+        #monkey.y -= CELL_SIZE
+        data['drop']+=10
 
 #keeps track of how many frames have passed
 def step():
-    data['drop']+=.2
+    data['drop']+=.1
     monkey.y += data['drop']
     data['frames'] += 1
     if data['frames'] == 50:
