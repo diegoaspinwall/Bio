@@ -12,7 +12,7 @@ CELL_SIZE = 20
 
 #moves monkey up
 def moveUp(event):
-    if monkey.y > 30:
+    if monkey.y > 10:
         #monkey.y -= CELL_SIZE
         data['drop'] = -5
 
