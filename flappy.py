@@ -17,10 +17,10 @@ def moveUp(event):
 
 #keeps track of how many frames have passed
 def step():
-    data['drop']+=.1
+    data['drop']+=.2
     monkey.y += data['drop']
     data['frames'] += 1
-    if data['frames'] == 30:
+    if data['frames'] == 50:
         print('hi')
         data['drop']=0
         data['frames']=0
