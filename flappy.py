@@ -17,6 +17,7 @@ def moveUp(event):
 
 #keeps track of how many frames have passed
 def step():
+    monkey.y += 1
     data['frames'] += 1
     if data['frames'] == 2000:
         print('hi')
