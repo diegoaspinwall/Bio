@@ -26,6 +26,7 @@ def step():
 def wallspawn():
     print('hi')
     data['frames']=0
+    
 
 #runs the game
 if __name__ == '__main__':
@@ -44,5 +45,5 @@ if __name__ == '__main__':
     Sprite(jungleBox)
     monkey = Sprite(monkeyBox, (CELL_SIZE*(COLS/2-20),0))
 
-    App().listenKeyEvent('keydown','up arrow',moveUp)
+    App().listenKeyEvent('keydown','space',moveUp)
     App().run(step)
