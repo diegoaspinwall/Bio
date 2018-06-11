@@ -24,6 +24,7 @@ def step():
         wallspawn()
         #spawns wall
         #print(data['walls'])
+        print(data['hitspot'])
     for indwall in data['walls']:
         indwall.x -= 3
         #moves walls
