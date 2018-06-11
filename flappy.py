@@ -22,6 +22,8 @@ def step():
     data['frames'] += 1
     if data['frames']==100:
         wallspawn()
+    for indwall in data['walls']:
+        indwall.x -= 1
 
 def wallspawn():
     print('hi')
