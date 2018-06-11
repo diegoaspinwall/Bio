@@ -20,11 +20,12 @@ def step():
     data['drop']+=.1
     monkey.y += data['drop']
     data['frames'] += 1
-    if data['frames']==200:
+    if data['frames']==100:
         wallspawn()
 
 def wallspawn():
     print('hi')
+    data['frames']=0
 
 #runs the game
 if __name__ == '__main__':
