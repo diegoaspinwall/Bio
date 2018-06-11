@@ -38,30 +38,6 @@ def wallspawn():
     #creates new wall
 
 
-'''
-def spriteflake():
-    xpos = randint(0,COLS-1)
-    data['flakes'].append(Sprite(snowBlock, (SIZE*xpos,-SIZE)))
-    data['fallpos'][xpos] += 1
-    data['stopflake'].append(data['fallpos'][xpos])
-    print(data['stopflake'])
-    
-
-def step():
-    data['frames'] += 1
-    if data['frames'] == 10:
-        spriteflake()
-        data['frames'] = 0
-    place = 0
-    for flake in data['flakes']:
-        flake.y += 1
-        if flake.y == (COLS*SIZE-SIZE*(data['stopflake'][place])):
-            data['flakes'].remove(flake)
-            data['stopflake'].remove(data['stopflake'][place])
-        place += 1
-'''
-
-
 #runs the game
 if __name__ == '__main__':
     
