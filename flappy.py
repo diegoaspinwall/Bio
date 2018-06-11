@@ -18,10 +18,10 @@ def moveUp(event):
 
 #keeps track of how many frames have passed
 def step():
-    if monkey.y
-    data['drop']+=.1
-    monkey.y += data['drop']
-    data['frames'] += 1
+    if monkey.y < ROWS*CELL_SIZE:
+        data['drop']+=.1
+        monkey.y += data['drop']
+        data['frames'] += 1
     '''
     if data['frames'] == 50:
         print('hi')
