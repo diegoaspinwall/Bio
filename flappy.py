@@ -31,6 +31,8 @@ def step():
     for indwall in data['walls']:
         if indwall.x < (-2)*CELL_SIZE:
             data['walls'].remove(indwall)
+            if len(data['hitspot']) > 2:
+                data['hitspot'].remove(data['walls'].index(indwall))
         #hitspot
         #deletes walls out of picture
 
