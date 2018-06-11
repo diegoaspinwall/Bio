@@ -35,6 +35,7 @@ def step():
             if len(data['hitspot']) > 2:
                 data['hitspot'].remove(data['walls'].index(indwall))
                 #deletes hitspots that passed from corresponding walls
+                #NNNNOOOOO
 
 def wallspawn():
     data['frames']=0
