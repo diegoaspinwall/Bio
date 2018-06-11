@@ -15,20 +15,23 @@ def moveUp(event):
     if monkey.y > 10:
         data['drop'] = -5
 
-#keeps track of how many frames have passed
 def step():
     data['drop']+=.1
+    #makes fall quicker
     monkey.y += data['drop']
     data['frames'] += 1
     if data['frames']==100:
         wallspawn()
+        #spawns wall
     for indwall in data['walls']:
         indwall.x -= 1
+        #moves walls
 
 def wallspawn():
     print('hi')
     data['frames']=0
     data['walls'].append(Sprite(wall, (COLS*CELL_SIZE,0)))
+    #creates new wall
 
 
 '''
