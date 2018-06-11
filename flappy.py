@@ -33,8 +33,8 @@ def step():
 
 def wallspawn():
     data['frames']=0
-    height = randint(5,(COLS-6))
-    data['walls'].append(Sprite(RectangleAsset(2*CELL_SIZE,ROWS*CELL_SIZE, LineStyle(1,brown), brown), (COLS*CELL_SIZE,0)))
+    height = randint(5,(COLS-5))
+    data['walls'].append(Sprite(RectangleAsset(2*CELL_SIZE,height*CELL_SIZE, LineStyle(1,brown), brown), (COLS*CELL_SIZE,0)))
     #creates new wall
 
 
