@@ -53,7 +53,7 @@ if __name__ == '__main__':
     data['walls'] = []
     data['hitspot'] = []
     
-    blue = Color(0x6666ff,1)
+    blue = Color(0x99ccff,1)
     brown = Color(0x8B4513,1)
     white = Color(0xffffff,1)
     
