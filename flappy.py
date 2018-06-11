@@ -17,7 +17,7 @@ def moveUp(event):
 
 def step():
     data['drop']+=.1
-    #makes fall quicker
+    #makes fall speed up
     monkey.y += data['drop']
     data['frames'] += 1
     if data['frames']==200:
@@ -37,7 +37,7 @@ def wallspawn():
     height = randint(5,(ROWS-10))
     data['walls'].append(Sprite(RectangleAsset(2*CELL_SIZE,height*CELL_SIZE, LineStyle(1,brown), brown), (COLS*CELL_SIZE,0)))
     data['walls'].append(Sprite(RectangleAsset(2*CELL_SIZE,(ROWS-(height+5))*CELL_SIZE, LineStyle(1,brown), brown), (COLS*CELL_SIZE,(height+5)*CELL_SIZE)))
-    #creates new wall
+    #creates new wall with random hole
 
 
 #runs the game
