@@ -23,6 +23,7 @@ def step():
     if data['frames']==200:
         wallspawn()
         #spawns wall
+        print(data['walls'])
     for indwall in data['walls']:
         indwall.x -= 3
         #moves walls
