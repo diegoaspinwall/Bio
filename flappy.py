@@ -21,13 +21,6 @@ def step():
     data['drop']+=.1
     monkey.y += data['drop']
     data['frames'] += 1
-    '''
-    if data['frames'] == 50:
-        print('hi')
-        data['drop']=0
-        data['frames']=0
-    '''
-    
 
 #runs the game
 if __name__ == '__main__':
