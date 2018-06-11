@@ -20,7 +20,7 @@ def step():
     #makes fall quicker
     monkey.y += data['drop']
     data['frames'] += 1
-    if data['frames']==300:
+    if data['frames']==200:
         wallspawn()
         #spawns wall
     for indwall in data['walls']:
