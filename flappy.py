@@ -70,7 +70,7 @@ if __name__ == '__main__':
     
     jungleBox = RectangleAsset(COLS*CELL_SIZE,ROWS*CELL_SIZE, LineStyle(1,blue),blue)
     monkeyBox = RectangleAsset(CELL_SIZE,CELL_SIZE,LineStyle(1,white), white)
-    wall = RectangleAsset((2*CELL_SIZE,ROWS*CELL_SIZE, LineStyle(1,brown), brown))
+    wall = RectangleAsset(2*CELL_SIZE,ROWS*CELL_SIZE, LineStyle(1,brown), brown)
     
     Sprite(jungleBox)
     monkey = Sprite(monkeyBox, (CELL_SIZE*(COLS/2-20),0))
