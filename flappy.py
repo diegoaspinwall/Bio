@@ -26,6 +26,7 @@ def step():
 def wallspawn():
     print('hi')
     data['frames']=0
+    data['walls'].append(Sprite(wall, (COLS*CELL_SIZE,0)))
 
 
 '''
