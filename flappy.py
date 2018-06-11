@@ -34,7 +34,7 @@ def step():
 def wallspawn():
     print('hi')
     data['frames']=0
-    data['walls'].append(Sprite(wall, (COLS*CELL_SIZE,0)))
+    data['walls'].append(Sprite(RectangleAsset(2*CELL_SIZE,ROWS*CELL_SIZE, LineStyle(1,brown), brown), (COLS*CELL_SIZE,0)))
     #creates new wall
 
 
@@ -53,7 +53,6 @@ if __name__ == '__main__':
     
     jungleBox = RectangleAsset(COLS*CELL_SIZE,ROWS*CELL_SIZE, LineStyle(1,blue),blue)
     monkeyBox = RectangleAsset(CELL_SIZE,CELL_SIZE,LineStyle(1,white), white)
-    wall = RectangleAsset(2*CELL_SIZE,ROWS*CELL_SIZE, LineStyle(1,brown), brown)
     
     Sprite(jungleBox)
     monkey = Sprite(monkeyBox, (CELL_SIZE*(COLS/2-20),0))
