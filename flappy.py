@@ -23,7 +23,7 @@ def step():
     if data['frames']==200:
         wallspawn()
         #spawns wall
-        print(data['walls'])
+        #print(data['walls'])
     for indwall in data['walls']:
         indwall.x -= 3
         #moves walls
@@ -32,8 +32,8 @@ def step():
         #deletes walls out of picture
 
 def wallspawn():
-    print('hi')
     data['frames']=0
+    height = randint(5,(COLS-6))
     data['walls'].append(Sprite(RectangleAsset(2*CELL_SIZE,ROWS*CELL_SIZE, LineStyle(1,brown), brown), (COLS*CELL_SIZE,0)))
     #creates new wall
 
