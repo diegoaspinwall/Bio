@@ -37,6 +37,7 @@ def wallspawn():
     height = randint(5,(ROWS-10))
     data['walls'].append(Sprite(RectangleAsset(2*CELL_SIZE,height*CELL_SIZE, LineStyle(1,brown), brown), (COLS*CELL_SIZE,0)))
     data['walls'].append(Sprite(RectangleAsset(2*CELL_SIZE,(ROWS-(height+5))*CELL_SIZE, LineStyle(1,brown), brown), (COLS*CELL_SIZE,(height+5)*CELL_SIZE)))
+    data['hitspot'].append(height)
     #creates new wall with random hole
 
 
@@ -48,6 +49,7 @@ if __name__ == '__main__':
     data['frames'] = 0
     data['drop'] = 0
     data['walls'] = []
+    data['hitspot'] = []
     
     blue = Color(0x6666ff,1)
     brown = Color(0x8B4513,1)
