@@ -25,9 +25,10 @@ def step():
         #spawns wall
     for indwall in data['walls']:
         indwall.x -= 3
+        #moves walls
         if indwall.x< (-2)*CELL_SIZE:
             data['walls'].remove(indwall)
-        #moves walls
+        #deletes walls out of picture
 
 def wallspawn():
     print('hi')
