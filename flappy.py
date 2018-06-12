@@ -35,6 +35,8 @@ def step():
         if indwall.x < (-2)*CELL_SIZE:
             data['walls'].remove(indwall)
             #deletes walls out of picture
+    if data['frames']%200 == 100:
+        print('hi')
 
 def wallspawn():
     height = randint(5,(ROWS-10))
