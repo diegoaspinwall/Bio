@@ -37,7 +37,6 @@ def step():
             #deletes walls out of picture
     if data['frames'] > 450:
         if data['frames']%200 == 100:
-            print('hi')
             print(data['hitspot'][0])
             #starting point for finding hole place KEEP WORKING HERE
 
