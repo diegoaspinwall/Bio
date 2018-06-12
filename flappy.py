@@ -29,13 +29,12 @@ def step():
         indwall.x -= 3
         #moves walls
     for indwall in data['walls']:
+        if len(data['hitspot']) > 2:
+            data['hitspot'].remove(data['walls'].index(indwall))
+            #deletes hitspots that passed from corresponding walls
         if indwall.x < (-2)*CELL_SIZE:
             data['walls'].remove(indwall)
             #deletes walls out of picture
-            if len(data['hitspot']) > 2:
-                data['hitspot'].remove(data['walls'].index(indwall))
-                #deletes hitspots that passed from corresponding walls
-                #NNNNOOOOO
 
 def wallspawn():
     data['frames']=0
