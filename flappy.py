@@ -30,7 +30,7 @@ def step():
         #moves walls
     for indwall in data['walls']:
         if len(data['hitspot']) > 2:
-            data['hitspot'].remove(data['walls'].index(indwall))
+            data['hitspot'].remove(data['hitspot'][0])
             #deletes hitspots that passed from corresponding walls
         if indwall.x < (-2)*CELL_SIZE:
             data['walls'].remove(indwall)
