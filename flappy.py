@@ -36,8 +36,9 @@ def step():
             data['walls'].remove(indwall)
             #deletes walls out of picture
     if data['frames'] > 450:
-        if data['frames']%200 == 100:
+        if data['frames']%200 == 110:
             print(data['hitspot'][0])
+            if monkey.y>height*CELL_SIZE and monkey.y<(height+5)*CELL_SIZE
             #starting point for finding hole place KEEP WORKING HERE
 
 def wallspawn():
