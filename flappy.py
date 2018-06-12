@@ -38,6 +38,7 @@ def step():
     if data['frames'] > 450:
         if data['frames']%200 == 100:
             print('hi')
+            #starting point for finding hole place KEEP WORKING HERE
 
 def wallspawn():
     height = randint(5,(ROWS-10))
