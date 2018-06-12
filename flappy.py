@@ -39,8 +39,9 @@ def step():
         if data['frames']%200 == 110:
             print(data['hitspot'][0])
             #starting point for finding hole place KEEP WORKING HERE
-            if monkey.y>height*CELL_SIZE and monkey.y<(height+5)*CELL_SIZE:
-                print('hi')
+            #if monkey.y>height*CELL_SIZE and monkey.y<(height+5)*CELL_SIZE:
+            #    print('hi')
+            print(monkey.y)
 
 def wallspawn():
     height = randint(5,(ROWS-10))
