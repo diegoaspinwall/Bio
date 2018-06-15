@@ -37,11 +37,11 @@ def step():
             #deletes walls out of picture
     if data['frames'] > 450:
         if data['frames']%200 == 110:
-            print(data['hitspot'][0])
-            #starting point for finding hole place KEEP WORKING HERE
+            #print(data['hitspot'][0])
             if monkey.y<data['hitspot'][0]*CELL_SIZE or monkey.y>(data['hitspot'][0]+4)*CELL_SIZE:
                 print('Death')
-            print(monkey.y)
+            #finds if monkey is inside hole
+            #print(monkey.y)
 
 def wallspawn():
     height = randint(5,(ROWS-10))
