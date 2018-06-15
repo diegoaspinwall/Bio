@@ -10,7 +10,7 @@ ROWS = 30
 COLS = 55
 CELL_SIZE = 20
 
-play = True
+print('Press the Space Bar to Fly')
 
 #moves monkey up
 def moveUp(event):
