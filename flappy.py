@@ -10,6 +10,8 @@ ROWS = 30
 COLS = 55
 CELL_SIZE = 20
 
+play = True
+
 #moves monkey up
 def moveUp(event):
     if monkey.y > 10:
@@ -52,7 +54,7 @@ def wallspawn():
     #stores height
 
 
-while data['play?'] == True:
+while play == True:
     #runs the game
     if __name__ == '__main__':
         
@@ -61,7 +63,6 @@ while data['play?'] == True:
         data['drop'] = 0
         data['walls'] = []
         data['hitspot'] = []
-        data['play?'] = True
         
         blue = Color(0x99ccff,1)
         brown = Color(0x8B4513,1)
