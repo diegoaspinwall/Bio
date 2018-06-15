@@ -18,33 +18,34 @@ def moveUp(event):
         data['drop'] = -5
 
 def step():
-    data['drop']+=.1
-    #makes fall speed up
-    monkey.y += data['drop']
-    data['frames'] += 1
-    if data['frames']%200 == 0:
-        #print(data['hitspot'])
-        wallspawn()
-        #spawns wall
-        #print(data['hitspot'])
-    for indwall in data['walls']:
-        indwall.x -= 3
-        #moves walls
-    for indwall in data['walls']:
-        if len(data['hitspot']) > 2:
-            data['hitspot'].remove(data['hitspot'][0])
-            #deletes hitspots that passed from corresponding walls
-        if indwall.x < (-2)*CELL_SIZE:
-            data['walls'].remove(indwall)
-            #deletes walls out of picture
-    if data['frames'] > 450:
-        if data['frames']%200 == 110:
-            #print(data['hitspot'][0])
-            if monkey.y<data['hitspot'][0]*CELL_SIZE or monkey.y>(data['hitspot'][0]+4)*CELL_SIZE:
-                print('High Score:', data['frames'])
-                data['play'] = False
-            #finds if monkey is inside hole
-            #print(monkey.y)
+    if data['play'] == True:
+        data['drop']+=.1
+        #makes fall speed up
+        monkey.y += data['drop']
+        data['frames'] += 1
+        if data['frames']%200 == 0:
+            #print(data['hitspot'])
+            wallspawn()
+            #spawns wall
+            #print(data['hitspot'])
+        for indwall in data['walls']:
+            indwall.x -= 3
+            #moves walls
+        for indwall in data['walls']:
+            if len(data['hitspot']) > 2:
+                data['hitspot'].remove(data['hitspot'][0])
+                #deletes hitspots that passed from corresponding walls
+            if indwall.x < (-2)*CELL_SIZE:
+                data['walls'].remove(indwall)
+                #deletes walls out of picture
+        if data['frames'] > 450:
+            if data['frames']%200 == 110:
+                #print(data['hitspot'][0])
+                if monkey.y<data['hitspot'][0]*CELL_SIZE or monkey.y>(data['hitspot'][0]+4)*CELL_SIZE:
+                    print('Score:', data['frames'])
+                    data['play'] = False
+                #finds if monkey is inside hole
+                #print(monkey.y)
 
 def wallspawn():
     height = randint(5,(ROWS-10))
@@ -75,6 +76,5 @@ if __name__ == '__main__':
     Sprite(jungleBox)
     monkey = Sprite(monkeyBox, (CELL_SIZE*(COLS/2-20),0))
     
-    if data['play'] == True:
-        App().listenKeyEvent('keydown','space',moveUp)
-        App().run(step)
+    App().listenKeyEvent('keydown','space',moveUp)
+    App().run(step)
