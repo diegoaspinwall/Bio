@@ -42,6 +42,7 @@ def step():
             #print(data['hitspot'][0])
             if monkey.y<data['hitspot'][0]*CELL_SIZE or monkey.y>(data['hitspot'][0]+4)*CELL_SIZE:
                 print('High Score:', data['frames'])
+                data['play'] = False
             #finds if monkey is inside hole
             #print(monkey.y)
 
@@ -62,6 +63,7 @@ if __name__ == '__main__':
     data['drop'] = 0
     data['walls'] = []
     data['hitspot'] = []
+    data['play'] = True
     
     blue = Color(0x99ccff,1)
     brown = Color(0x8B4513,1)
