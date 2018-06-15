@@ -52,24 +52,26 @@ def wallspawn():
     #stores height
 
 
-#runs the game
-if __name__ == '__main__':
+while data['play?'] == True:
+    #runs the game
+    if __name__ == '__main__':
+        
+        data = {}
+        data['frames'] = 0
+        data['drop'] = 0
+        data['walls'] = []
+        data['hitspot'] = []
+        data['play?'] = True
+        
+        blue = Color(0x99ccff,1)
+        brown = Color(0x8B4513,1)
+        white = Color(0xffffff,1)
+        
+        jungleBox = RectangleAsset(COLS*CELL_SIZE,ROWS*CELL_SIZE, LineStyle(1,blue),blue)
+        monkeyBox = RectangleAsset(CELL_SIZE,CELL_SIZE,LineStyle(1,white), white)
+        
+        Sprite(jungleBox)
+        monkey = Sprite(monkeyBox, (CELL_SIZE*(COLS/2-20),0))
     
-    data = {}
-    data['frames'] = 0
-    data['drop'] = 0
-    data['walls'] = []
-    data['hitspot'] = []
-    
-    blue = Color(0x99ccff,1)
-    brown = Color(0x8B4513,1)
-    white = Color(0xffffff,1)
-    
-    jungleBox = RectangleAsset(COLS*CELL_SIZE,ROWS*CELL_SIZE, LineStyle(1,blue),blue)
-    monkeyBox = RectangleAsset(CELL_SIZE,CELL_SIZE,LineStyle(1,white), white)
-    
-    Sprite(jungleBox)
-    monkey = Sprite(monkeyBox, (CELL_SIZE*(COLS/2-20),0))
-
-    App().listenKeyEvent('keydown','space',moveUp)
-    App().run(step)
+        App().listenKeyEvent('keydown','space',moveUp)
+        App().run(step)
