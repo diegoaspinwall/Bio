@@ -54,7 +54,7 @@ def wallspawn():
     #stores height
 
 
-while play == True:
+if play == True:
     #runs the game
     if __name__ == '__main__':
         
