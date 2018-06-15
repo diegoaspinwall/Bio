@@ -39,7 +39,7 @@ def step():
         if data['frames']%200 == 110:
             #print(data['hitspot'][0])
             if monkey.y<data['hitspot'][0]*CELL_SIZE or monkey.y>(data['hitspot'][0]+4)*CELL_SIZE:
-                print('Death')
+                print('High Score:', data['frames'])
             #finds if monkey is inside hole
             #print(monkey.y)
 
